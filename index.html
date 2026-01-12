@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selamat Datang di Toko Buku</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0;}
+        table { border-collapse: collapse; width: 100%; }
+        .menu-bar { border: 1px solid black; margin-bottom: 20px;}
+        .menu-bar td { text-align: center; border: 1px solid black; }
+        .menu-bar a { text-decoration: none; display: block; padding: 10px; color: #333; font-weight: bold;}
+        .menu-bar summary { padding: 10px; cursor: pointer; font-weight: bold; list-style: none; }
+        .submenu a { padding: 5px; font-weight: normal; display: block; }
+        h2 { text-align: center; margin-top: 50px; }
+        .content { text-align: center; margin-top: 30px; }
+        
+        details > summary::-webkit-details-marker {
+          display: none;
+        }
+        details > summary {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-bar">
+    <table>
+        <tr>
+            <td width="50%">
+                <a href="index.html">HOME</a> 
+            </td>
+            <td width="50%">
+                <details>
+                    <summary>ADMIN</summary>
+                    <div class="submenu">
+                        <a href="admin.php?page=buku">BUKU</a>
+                        <a href="admin.php?page=penerbit">PENERBIT</a>
+                    </div>
+                </details>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="content">
+    <h2>Selamat Datang di Aplikasi Inventaris Toko Buku</h2>
+</div>
+
+</body>
+</html>
